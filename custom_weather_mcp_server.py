@@ -13,7 +13,7 @@ load_dotenv(BASE_DIR / ".env")
 mcp = FastMCP("Weather MCP Server")
 
 OPENWEATHER_API_KEY = os.getenv(
-    "OPENWEATHER_API_KEY"
+    "OPENWEATHER_API_KEY" 
 )
 
 REQUEST_TIMEOUT_SECONDS = 20
