@@ -123,7 +123,7 @@ def _llm_text(system_prompt: str, user_prompt: str) -> str:
     return str(response.content)
 
 
-def _json_from_llm(text: str) -> dict[str, Any]:
+def _json_from_llm(text: str) -> dict[str, Any]: 
     """Extract the first complete JSON object returned by the model."""
     start = text.find("{")
     end = text.rfind("}")
