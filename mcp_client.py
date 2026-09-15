@@ -82,7 +82,7 @@ client = MultiServerMCPClient(
             "url": (
                 "https://mcp.tavily.com/mcp/"
                 f"?tavilyApiKey={TAVILY_API_KEY or ''}"
-            ),
+            ), 
         },
 
         "aviationstack": {
@@ -104,7 +104,7 @@ client = MultiServerMCPClient(
 
             # Uses the weather server inside the current project folder.
             "args": [
-                str(WEATHER_SERVER_PATH),
+                str(WEATHER_SERVER_PATH), 
             ],
 
             "env": _subprocess_env(
